@@ -15,6 +15,11 @@
 		6946B44523328C1300D125E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6946B44323328C1300D125E1 /* LaunchScreen.storyboard */; };
 		6946B45023328C1300D125E1 /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B44F23328C1300D125E1 /* CryptoTests.swift */; };
 		6946B45B23328C1300D125E1 /* CryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B45A23328C1300D125E1 /* CryptoUITests.swift */; };
+		696853AA237F55D400F29EC7 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696853A9237F55D400F29EC7 /* BadgeSymbol.swift */; };
+		696853AE237F561200F29EC7 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696853AD237F561200F29EC7 /* MockData.swift */; };
+		696853B0237F562E00F29EC7 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696853AF237F562E00F29EC7 /* Coin.swift */; };
+		696853B2237F58FC00F29EC7 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696853B1237F58FC00F29EC7 /* LineChart.swift */; };
+		696853B4237F598400F29EC7 /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696853B3237F598400F29EC7 /* LineChartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		6946B45623328C1300D125E1 /* CryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6946B45A23328C1300D125E1 /* CryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITests.swift; sourceTree = "<group>"; };
 		6946B45C23328C1300D125E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696853A9237F55D400F29EC7 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		696853AD237F561200F29EC7 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		696853AF237F562E00F29EC7 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		696853B1237F58FC00F29EC7 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		696853B3237F598400F29EC7 /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,12 @@
 		6946B43723328C1200D125E1 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				6946B43823328C1200D125E1 /* AppDelegate.swift */,
-				6946B43A23328C1200D125E1 /* SceneDelegate.swift */,
-				6946B43C23328C1200D125E1 /* ContentView.swift */,
-				6946B43E23328C1300D125E1 /* Assets.xcassets */,
-				6946B44323328C1300D125E1 /* LaunchScreen.storyboard */,
-				6946B44623328C1300D125E1 /* Info.plist */,
+				6992F4392332B0CC00A294ED /* App */,
+				696853AB237F55EB00F29EC7 /* Common */,
 				6946B44023328C1300D125E1 /* Preview Content */,
+				6992F43A2332B0D100A294ED /* Resources */,
+				6992F43B2332B0DA00A294ED /* Scenes */,
+				696853A8237F55B800F29EC7 /* Views */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -134,6 +143,60 @@
 				6946B45C23328C1300D125E1 /* Info.plist */,
 			);
 			path = CryptoUITests;
+			sourceTree = "<group>";
+		};
+		696853A8237F55B800F29EC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				696853A9237F55D400F29EC7 /* BadgeSymbol.swift */,
+				696853B1237F58FC00F29EC7 /* LineChart.swift */,
+				696853B3237F598400F29EC7 /* LineChartController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		696853AB237F55EB00F29EC7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				696853AC237F55F200F29EC7 /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		696853AC237F55F200F29EC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				696853AD237F561200F29EC7 /* MockData.swift */,
+				696853AF237F562E00F29EC7 /* Coin.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6992F4392332B0CC00A294ED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6946B43823328C1200D125E1 /* AppDelegate.swift */,
+				6946B43A23328C1200D125E1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6992F43A2332B0D100A294ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6946B43E23328C1300D125E1 /* Assets.xcassets */,
+				6946B44323328C1300D125E1 /* LaunchScreen.storyboard */,
+				6946B44623328C1300D125E1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6992F43B2332B0DA00A294ED /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6946B43C23328C1200D125E1 /* ContentView.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696853B0237F562E00F29EC7 /* Coin.swift in Sources */,
 				6946B43923328C1200D125E1 /* AppDelegate.swift in Sources */,
+				696853B4237F598400F29EC7 /* LineChartController.swift in Sources */,
+				696853AA237F55D400F29EC7 /* BadgeSymbol.swift in Sources */,
 				6946B43B23328C1200D125E1 /* SceneDelegate.swift in Sources */,
+				696853B2237F58FC00F29EC7 /* LineChart.swift in Sources */,
 				6946B43D23328C1200D125E1 /* ContentView.swift in Sources */,
+				696853AE237F561200F29EC7 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +506,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Crypto/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Y8HF4E9A7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +526,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Crypto/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Y8HF4E9A7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = Crypto/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
