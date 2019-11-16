@@ -6,11 +6,12 @@
 //  Copyright © 2019 Danijel Kecman. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Coin: Hashable {
   let id: String
   let name: String
   let price: String
   let icon: String
+  let lineCoordinates: [CGFloat]
 }
