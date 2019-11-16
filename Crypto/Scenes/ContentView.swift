@@ -31,6 +31,10 @@ struct ContentView: View {
           .font(.largeTitle)
           .fontWeight(.heavy)
         
+        LineChartController(lineCoordinates: [3,2,5], inline: true)
+          .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 150)
+          .padding()
+        
         List {
           
           Section(header: Text("My Wallet")) {
